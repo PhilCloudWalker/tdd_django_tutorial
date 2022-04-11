@@ -14,7 +14,7 @@ class NewVisitorTest(unittest.TestCase):
     def test_add_item_and_retrieve_later(self):
         """ToDo List in title and header"""
         self.browser.get('http://localhost:8000/')
-        self.assertIn('TO-DO', self.browser.title)
+        self.assertIn('To-Do', self.browser.title)
 
         """Add "buy feather" and "make a fly" to as items"""
 
