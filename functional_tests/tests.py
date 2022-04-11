@@ -62,7 +62,7 @@ class NewVisitorTest(LiveServerTestCase):
         self.check_for_row_in_list_table('1: Buy feather')
         self.check_for_row_in_list_table('2: Fly home with feather')
 
-    def test_multiple_iser_can_start_lists_at_different_urls(self):
+    def test_multiple_user_can_start_lists_at_different_urls(self):
         # Edith starts a new to-do list
         self.browser.get(self.live_server_url)
         inputbox = self.browser.find_element(By.ID, 'id_new_item')
