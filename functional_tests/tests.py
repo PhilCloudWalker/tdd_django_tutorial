@@ -67,6 +67,47 @@ class NewVisitorTest(LiveServerTestCase):
 
         self.fail('finish the test')
 
+    def test_multiple_iser_can_start_lists_at_different_urls(self):
+        # Edith starts a new to-do list
+        self.browser.get(self.live_server_url)
+        inputbox = self.browser.find_element(By.ID, 'id_new_item')
+        inputbox.send_keys('Buy feather')
+        inputbox.send_keys(Keys.ENTER)
+        self.check_for_row_in_list_table('1: Buy feather')
+
+        edith_list_url = self.browser.current_url
+        self.assertRegex(edith_list_url, 'lists/.+')
+
+        # Now a new user comes
+
+        # Make sure they do not see Ediths Info
+        self.browser.quit()
+        self.browser = webdriver.Firefox()
+
+        # ensure no info of edith
+        self.browser.get(self.live_server_url)
+        page_text = self.browser.find_element(By.TAG_NAME, 'body').text
+        self.assertNotIn('Buy feather', page_text)
+        self.assertNotIn('Fly home', page_text)
+
+        # Francis starts a new list
+        inputbox = self.browser.find_element(By.ID, 'id_new_item')
+        inputbox.send_keys('Buy milk')
+        inputbox.send_keys(Keys.ENTER)
+        self.check_for_row_in_list_table('1: Buy milk')
+
+        # Francis get own url
+        francis_list_url = self.browser.current_url
+        self.assertRegex(edith_list_url, 'lists/.+')
+        self.assertNotEqual(edith_list_url, francis_list_url)
+
+        # Again, no trace of edith
+        page_text = self.browser.find_element(By.TAG_NAME, 'body').text
+        self.assertNotIn('Buy feather', page_text)
+        self.assertIn('Buy milk', page_text)
+
+
+
 
 if __name__ == '__main__':
     unittest.main(warnings='ignore')
