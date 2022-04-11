@@ -11,11 +11,18 @@ class NewVisitorTest(unittest.TestCase):
     def tearDown(self) -> None:
         self.browser.quit()
     
-    def test_can_start_a_list_and_retrieve_later(self):
+    def test_add_item_and_retrieve_later(self):
+        """ToDo List in title and header"""
         self.browser.get('http://localhost:8000/')
+        self.assertIn('TO-DO', self.browser.title)
 
-        self.assertIn('Congratulations', self.browser.title)
+        """Add "buy feather" and "make a fly" to as items"""
+
+    
+        """after adding, see a personal url and check that to-do is still there"""
+
         self.fail('finish the test')
+
 
 if __name__ == '__main__':
     unittest.main(warnings='ignore')
