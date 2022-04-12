@@ -4,4 +4,3 @@ __pycache__
 geckodriver.log
 venv
 .vscode
-lists/migrations/*
