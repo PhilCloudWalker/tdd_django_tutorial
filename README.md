@@ -14,9 +14,12 @@
     - Should show items 
     - and a backend in order to deploy stuff
 - learning concepts: 
-    - TDD - > unittest
+    - TDD - > unittest vs functional test
+        - unittest structure: Setup, Exercise, Assert
     - how to create backend --> understanding of ORM
 - after that switch to azure devOps
+- Construction of Restish API
+    - URL-Convention: no trailing slash --> “action” URLs which modify the database.
 
 ## Learning Day 2: Deploy with Azure DevOps
 - Understand pipeline
