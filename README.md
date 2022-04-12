@@ -8,7 +8,7 @@
 - Setup Config for Visual Code to debug --> had to change to folder with main, otherwise did not work :(
 
 
-## Structure
+## Learning Day 1: TDD with Django
 - Start with creating the initial django app via TDD. Till chapter 5 (or 6 if multiple user should be allowed)
 - Django app should have
     - Should show items 
@@ -17,4 +17,10 @@
     - TDD - > unittest
     - how to create backend --> understanding of ORM
 - after that switch to azure devOps
+
+## Learning Day 2: Deploy with Azure DevOps
+- Understand pipeline
+- Understand git concepts: feature branch, PR
+- Understand how to database tests
+
 
