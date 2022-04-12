@@ -27,3 +27,5 @@
 - Understand how to database tests
 
 
+## Learnung Day 3: Dependency management with poetry
+
