@@ -7,12 +7,12 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import unittest
 import time
-from django.test import LiveServerTestCase
+from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium.common.exceptions import WebDriverException, StaleElementReferenceException
 
 MAX_WAIT = 3
 
-class NewVisitorTest(LiveServerTestCase):
+class NewVisitorTest(StaticLiveServerTestCase):
 
     def setUp(self) -> None:
         self.browser = webdriver.Firefox()
@@ -46,7 +46,7 @@ class NewVisitorTest(LiveServerTestCase):
 
         #Add "buy feather" as item
         inputbox = self.browser.find_element(By.ID, 'id_new_item')
-        self.assertEqual(inputbox.get_attribute('placeholder'), 'Enter To-Do item')
+        self.assertEqual(inputbox.get_attribute('placeholder'), 'Enter a to-do item')
 
 
         inputbox.send_keys('Buy feather')
@@ -118,6 +118,7 @@ class NewVisitorTest(LiveServerTestCase):
         inputbox = self.browser.find_element(By.ID, 'id_new_item')
         self.assertAlmostEqual(inputbox.location['x'] + inputbox.size['width']/2, 512, delta=10)
         
+
 
 
 
