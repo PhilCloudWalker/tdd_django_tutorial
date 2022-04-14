@@ -28,6 +28,7 @@
 - VM
     - create a virtual machine and login in https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys
     - include public dns. optional create add own dns https://docs.microsoft.com/en-gb/azure/virtual-machines/custom-domain
+    - install python and replace alias https://askubuntu.com/questions/320996/how-to-make-python-program-command-execute-python-3
 
 ## Learnung Day 3: Dependency management with poetry
 
