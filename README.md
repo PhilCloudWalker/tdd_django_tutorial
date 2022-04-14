@@ -25,7 +25,9 @@
 - Understand pipeline
 - Understand git concepts: feature branch, PR
 - Understand how to database tests
-
+- VM
+    - create a virtual machine and login in https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys
+    - include public dns. optional create add own dns https://docs.microsoft.com/en-gb/azure/virtual-machines/custom-domain
 
 ## Learnung Day 3: Dependency management with poetry
 
