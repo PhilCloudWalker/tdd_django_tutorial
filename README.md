@@ -1,14 +1,17 @@
 # Tutorial Task
 
-## Start
+## Source:
+- Obey the Testing Goat (GTTD): https://www.obeythetestinggoat.com/pages/book.html#toc
+
+## Part 0: Getting Started
 - Create Virtual env based on docu
 - Setup inital Django
-- TDD: Chapter 1 and 2
+- GTTD: Chapter 1 and 2
 - Write tests
 - Setup Config for Visual Code to debug --> had to change to folder with main, otherwise did not work :(
 
-
-## Learning Day 1: TDD with Django
+## Part 1: TDD with Django
+- GTTD: Chapter 3 till 8
 - Start with creating the initial django app via TDD. Till chapter 5 (or 6 if multiple user should be allowed)
 - Django app should have
     - Should show items 
@@ -21,14 +24,17 @@
 - Construction of Restish API
     - URL-Convention: no trailing slash --> “action” URLs which modify the database.
 
-## Learning Day 2: Deploy with Azure DevOps
-- Understand pipeline
-- Understand git concepts: feature branch, PR
-- Understand how to database tests
-- VM
+## Part 2: Deploy with Azure DevOps
+### Part 2.1: Manual deployment on a VM
+- GTTD Chapter 9 - using a Azure VM --> choose cheapest
     - create a virtual machine and login in https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys
     - include public dns. optional create add own dns https://docs.microsoft.com/en-gb/azure/virtual-machines/custom-domain
     - install python and replace alias https://askubuntu.com/questions/320996/how-to-make-python-program-command-execute-python-3
+### Part 2.2 Automated Deployment 
+- Understand pipeline
+- Understand git concepts: feature branch, PR
+- Understand how to database tests
+
 
 ## Learnung Day 3: Dependency management with poetry
 
