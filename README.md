@@ -12,24 +12,26 @@
 
 ## Part 1: TDD with Django
 - GTTD: Chapter 3 till 8
-- Start with creating the initial django app via TDD. Till chapter 5 (or 6 if multiple user should be allowed)
-- Django app should have
-    - Should show items 
-    - and a backend in order to deploy stuff
 - learning concepts: 
     - TDD - > unittest vs functional test
         - unittest structure: Setup, Exercise, Assert
     - how to create backend --> understanding of ORM
-- after that switch to azure devOps
-- Construction of Restish API
-    - URL-Convention: no trailing slash --> “action” URLs which modify the database.
+        - deeper understanding
+    - Rest API:
+        - what are the concepts, via is it not fully restish
+        - understand conventions like: no trailing slash --> “action” URLs which modify the database.
+    - Git:
+        - get familiar with git status, git commit, git diff
 
 ## Part 2: Deploy with Azure DevOps
 ### Part 2.1: Manual deployment on a VM
-- GTTD Chapter 9 - using a Azure VM --> choose cheapest
+- GTTD Chapter 9 - using a Azure VM (ubuntu) --> choose cheapest!!!
     - create a virtual machine and login in https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys
     - include public dns. optional create add own dns https://docs.microsoft.com/en-gb/azure/virtual-machines/custom-domain
     - install python and replace alias https://askubuntu.com/questions/320996/how-to-make-python-program-command-execute-python-3
+- Learning Concepts:
+    - Azure VM: setup, networking
+    - linux commands
 ### Part 2.2 Automated Deployment 
 - Understand pipeline
 - Understand git concepts: feature branch, PR
