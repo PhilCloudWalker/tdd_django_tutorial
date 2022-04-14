@@ -1,17 +1,17 @@
 # Tutorial Task
 
 ## Source:
-- Obey the Testing Goat (GTTD): https://www.obeythetestinggoat.com/pages/book.html#toc
+- Obey the Testing Goat (OTTD): https://www.obeythetestinggoat.com/pages/book.html#toc
 
 ## Part 0: Getting Started
 - Create Virtual env based on docu
 - Setup inital Django
-- GTTD: Chapter 1 and 2
+- OTTD: Chapter 1 and 2
 - Write tests
 - Setup Config for Visual Code to debug --> had to change to folder with main, otherwise did not work :(
 
 ## Part 1: TDD with Django
-- GTTD: Chapter 3 till 8
+- OTTD: Chapter 3 till 8
 - learning concepts: 
     - TDD - > unittest vs functional test
         - unittest structure: Setup, Exercise, Assert
@@ -25,7 +25,7 @@
 
 ## Part 2: Deploy with Azure DevOps
 ### Part 2.1: Manual deployment on a VM
-- GTTD Chapter 9 - using a Azure VM (ubuntu) --> choose cheapest!!!
+- OTTD Chapter 9 - using a Azure VM (ubuntu) --> choose cheapest!!!
     - create a virtual machine and login in https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys
     - include public dns. optional create add own dns https://docs.microsoft.com/en-gb/azure/virtual-machines/custom-domain
     - install python and replace alias https://askubuntu.com/questions/320996/how-to-make-python-program-command-execute-python-3
