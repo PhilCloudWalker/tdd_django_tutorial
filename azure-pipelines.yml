@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 stages: 
-- stage: Run unittest
+- stage: Unittesting
   jobs:
   - job: SetupAgent
     steps: 
@@ -41,7 +41,7 @@ stages:
         pip install unittest-xml-reporting
       displayName: 'Install prerequisites'
   
-  - job: Run_Unittest 
+  - job: RunUnittest 
     steps:
     - script: |
         pushd '$(projectRoot)'
