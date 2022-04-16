@@ -32,7 +32,16 @@
 - Learning Concepts:
     - Azure VM: setup, networking
     - linux commands
+
 ### Part 2.2 Automated Deployment 
+- First task: Create pipeline for unittest
+    - Connect git and azure devops
+    - Use standard django template
+    - Modify a bit
+    - Create a stage "unittest"
+        - Understand difference stages, task, steps, jobs: https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops
+        - Implement stage: https://docs.microsoft.com/en-us/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml
+
 - Understand pipeline
 - Understand git concepts: feature branch, PR
 - Understand how to database tests
