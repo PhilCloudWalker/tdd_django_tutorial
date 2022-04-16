@@ -8,11 +8,6 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-strategy:
-  matrix:
-    Python37:
-      PYTHON_VERSION: '3.7'
-  maxParallel: 1
 
 stages: 
 - stage: Run unittest
@@ -21,7 +16,7 @@ stages:
     steps: 
     - task: UsePythonVersion@0
       inputs:
-        versionSpec: '$(PYTHON_VERSION)'
+        versionSpec: '3.7'
         architecture: 'x64'
 
     - task: PythonScript@0
