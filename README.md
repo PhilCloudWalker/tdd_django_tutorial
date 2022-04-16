@@ -33,7 +33,7 @@
     - Azure VM: setup, networking
     - linux commands
 
-### Part 2.2 Automated Deployment 
+### Part 2.2 Automated Deployment on VM
 - First task: Create pipeline for unittest
     - Connect git and azure devops
     - Use standard django template
@@ -41,6 +41,16 @@
     - Create a stage "unittest"
         - Understand difference stages, task, steps, jobs: https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops
         - Implement stage: https://docs.microsoft.com/en-us/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml
+    - Deploy code on VM
+        - https://youtu.be/zBr7cl6ASMQ
+        - https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/deploy-linux-vm?view=azure-devops&tabs=java
+            - erstmal mit git clone
+            - dann mit copy und upload
+    - create VM with terraform
+        - Question: where to store terraform state
+
+### Part 2.3 Automated deployment on Azure App
+    - Adjust database
 
 - Understand pipeline
 - Understand git concepts: feature branch, PR
