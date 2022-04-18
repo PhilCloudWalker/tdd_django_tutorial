@@ -82,18 +82,19 @@ stages:
                 echo "Starting deployment script run"
                 cd ~
                 pwd
+                python -V
                 echo Delete old folder
                 rm django_code -r -f
                 mkdir django_code
                 cp '$(Pipeline.Workspace)/superlists' django_code -r
                 cd django_code/superlists
                 echo Install packages
-                python -m venv virtualenv
+                python3.7 -m venv virtualenv
                 source virtualenv/bin/activate
                 pip install -r requirements.txt
                 echo Migrate Database
                 pwd
-                python manage.py migrate
+                python3.7 manage.py migrate
                 echo Run Django app
                 pwd
                 screen -d -m python manage.py runserver 0.0.0.0:8000
