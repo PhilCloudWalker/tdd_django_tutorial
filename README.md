@@ -1,5 +1,8 @@
 # Tutorial Task
 
+# Goal
+Offer a 1-month tutorial to understand test driven development with Python and deployment via Azure DevOps
+
 ## Source:
 - Obey the Testing Goat (OTTD): https://www.obeythetestinggoat.com/pages/book.html#toc
 
