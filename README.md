@@ -24,14 +24,13 @@ Get to now django and write the first test
 ## Part 1: TDD with Django
 Develop a django using test driven development locally
 - Task: Finish OTTD Chapter 3 till 8
-- Goals: understand testing, familiarize with git, learn console command, learn more about ORM, get to know rest concepts 
+- Goals: understand testing, familiarize with git, learn console commands, learn more about ORM, get to know rest concepts 
 - Subtasks
     - TDD - > unittest vs functional test
         - unittest structure: Setup, Exercise, Assert
     - how to create backend --> understanding of ORM
-        - deeper understanding
     - Rest API:
-        - what are the concepts, via is it not fully restish
+        - when does a API follows the rest principles?
         - understand conventions like: no trailing slash --> “action” URLs which modify the database.
     - Git:
         - get familiar with git status, git commit, git diff
@@ -64,9 +63,9 @@ Deploy Django app via CICD Pipeline
         - https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/deploy-linux-vm?view=azure-devops&tabs=java
 
 - Task: Create VM via Terraform and include in pipeline
-- Goals: get to know IaC, include in pipeline
-- Subtasks
-    - handel terraform state correctly
+    - Goals: get to know IaC, include in pipeline
+    - Subtasks
+        - handle terraform state correctly
 
 
 ### Part 2.3 Automated deployment on Azure Apps
