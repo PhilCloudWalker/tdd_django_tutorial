@@ -6,3 +6,7 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt install python3.7
 python3 oder python3.7
 sudo apt install python3.7 python3.7-venv
+
+# Run Django
+screen -d -m python manage.py runserver 0.0.0.0:8000 # run detachted
+pkill -f runserver # kill runserver
