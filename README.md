@@ -9,6 +9,7 @@
 
 ## Part 0: Getting Started
 Get to now django and write the first test
+- Task: Create Git Repo in Thinkport GitHub Account
 - Task: Finish Django Tutorial
     - Link: https://tutorial.djangogirls.org/en/
     - Goals: First understanding of django, VSCode Setup, understanding of virtual envs
