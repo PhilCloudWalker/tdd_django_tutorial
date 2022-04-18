@@ -59,4 +59,4 @@ stages:
         Contents: '**'
         TargetFolder: $(Build.ArtifactStagingDirectory)
     - upload: $(Build.ArtifactStagingDirectory)
-      artifact: superlits
+      artifact: drop
