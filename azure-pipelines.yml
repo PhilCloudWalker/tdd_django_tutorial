@@ -60,3 +60,24 @@ stages:
         TargetFolder: $(Build.ArtifactStagingDirectory)
     - upload: $(Build.ArtifactStagingDirectory)
       artifact: drop
+
+- stage: Deploy
+  jobs:
+  - deployment: VMDeploy
+    displayName: web
+    pool:
+      vmImage: 'ubuntu-latest'
+    environment:
+      name: ottg-vm
+      resourceType: VirtualMachine
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: |
+                # Modify deployment script based on the app type
+                echo "Starting deployment script run"
+                mkdir pipline-test
