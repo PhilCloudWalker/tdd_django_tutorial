@@ -97,5 +97,5 @@ stages:
                 python3.7 manage.py migrate
                 echo Run Django app
                 pwd
-                screen -d -m python3.7 manage.py runserver 0.0.0.0:8000
+                python3.7 manage.py runserver 0.0.0.0:8000
                 echo ---- Done----
