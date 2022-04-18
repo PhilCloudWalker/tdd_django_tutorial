@@ -22,7 +22,7 @@ Get to now django and write the first test
         - Setup Config for Visual Code to debug via "python manage.py test"
 
 ## Part 1: TDD with Django
-Develop a django using test driven development locally
+Develop a django app using test driven development locally
 - Task: Finish OTTD Chapter 3 till 8
 - Goals: understand testing, familiarize with git, learn console commands, learn more about ORM, get to know rest concepts 
 - Subtasks
