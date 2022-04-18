@@ -77,6 +77,7 @@ stages:
           - task: Bash@3
             inputs:
               targetType: 'inline'
+              # Code workes but terminal need to stay open, otherwise django stopped --> hence deploy not finished ;)
               script: |
                 # Modify deployment script based on the app type
                 echo "Starting deployment script run"
@@ -99,3 +100,4 @@ stages:
                 pwd
                 python3.7 manage.py runserver 0.0.0.0:8000
                 echo ---- Done----
+                
