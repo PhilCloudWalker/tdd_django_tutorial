@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 stages: 
-- stage: Unittesting
+- stage: Build
   jobs:
   - job: SetupAgent
     steps: 
@@ -56,7 +56,7 @@ stages:
       displayName: 'Copy Files to artifact staging directory'
       inputs:
         SourceFolder: '$(System.DefaultWorkingDirectory)'
-        Contents: '**/target/*.?(war|jar)'
+        Contents: '**/superlists/*'
         TargetFolder: $(Build.ArtifactStagingDirectory)
     - upload: $(Build.ArtifactStagingDirectory)
       artifact: drop
