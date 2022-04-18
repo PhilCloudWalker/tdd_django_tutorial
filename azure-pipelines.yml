@@ -51,3 +51,12 @@ stages:
         testResultsFiles: "**/TEST-*.xml"
         testRunTitle: 'Python $(PYTHON_VERSION)'
       condition: succeededOrFailed()
+
+    - task: CopyFiles@2
+      displayName: 'Copy Files to artifact staging directory'
+      inputs:
+        SourceFolder: '$(System.DefaultWorkingDirectory)'
+        Contents: '**/target/*.?(war|jar)'
+        TargetFolder: $(Build.ArtifactStagingDirectory)
+    - upload: $(Build.ArtifactStagingDirectory)
+      artifact: drop
