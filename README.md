@@ -1,7 +1,8 @@
 # Tutorial Task
 
 # Goal
-Offer a 1-month tutorial to understand test driven development with Python and deployment via Azure DevOps
+- 1-month tutorial to understand test driven development with Python and deployment via Azure DevOps
+- you will be guided through the workshop. Nevertheless, it is not fully scripted on purpose. Sometimes you will encounter error or that things behave differently than expected. use this to read documentations, google stuff, try, fail and finally succeed. this will be the most important and rewarding moments ;) 
 
 ## Source:
 - Obey the Testing Goat (OTTD): https://www.obeythetestinggoat.com/pages/book.html#toc
