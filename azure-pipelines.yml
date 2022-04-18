@@ -59,7 +59,7 @@ stages:
         Contents: '**'
         TargetFolder: $(Build.ArtifactStagingDirectory)
     - upload: $(Build.ArtifactStagingDirectory)
-      artifact: drop
+      artifact: superlists
 
 - stage: Deploy
   jobs:
@@ -83,9 +83,9 @@ stages:
                 cd ~
                 pwd
                 echo Delete old folder
-                rm superlists -r -f
-                mkdir superlists
-                cp '$(Pipeline.Workspace)/drop' superlists
-                cd superlists
+                rm django_code -r -f
+                mkdir django_code
+                cp '$(Pipeline.Workspace)/superlists' django_code -r
+                cd django_code
                 pwd
                 echo ---- Done----
