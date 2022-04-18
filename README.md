@@ -4,15 +4,25 @@
 - Obey the Testing Goat (OTTD): https://www.obeythetestinggoat.com/pages/book.html#toc
 
 ## Part 0: Getting Started
-- Create Virtual env based on docu
-- Setup inital Django
-- OTTD: Chapter 1 and 2
-- Write tests
-- Setup Config for Visual Code to debug --> had to change to folder with main, otherwise did not work :(
+Get to now django and write the first test
+- Task: Finish Django Tutorial
+    - Link: https://tutorial.djangogirls.org/en/
+    - Goals: First understanding of django, VSCode Setup, understanding of virtual envs
+    - Subtasks: 
+        - Install VSCode
+        - Check which python do you have --> what is the command?
+        - Setup Virtual Env using venv package https://docs.python.org/3/library/venv.html
+
+- Task: Finish OTTD Chapter 1 and 2
+    - Goals: Writing first unittest and get to know test driven development
+    - Subtask
+        - Setup Config for Visual Code to debug via "python manage.py test"
 
 ## Part 1: TDD with Django
-- OTTD: Chapter 3 till 8
-- learning concepts: 
+Develop a django using test driven development locally
+- Task: Finish OTTD Chapter 3 till 8
+- Goals: understand testing, familiarize with git, learn console command, learn more about ORM, get to know rest concepts 
+- Subtasks
     - TDD - > unittest vs functional test
         - unittest structure: Setup, Exercise, Assert
     - how to create backend --> understanding of ORM
@@ -25,37 +35,43 @@
 
 ## Part 2: Deploy with Azure DevOps
 ### Part 2.1: Manual deployment on a VM
-- OTTD Chapter 9 - using a Azure VM (ubuntu) --> choose cheapest!!!
-    - create a virtual machine and login in https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys
-    - include public dns. optional create add own dns https://docs.microsoft.com/en-gb/azure/virtual-machines/custom-domain
+Deploy Django app on a Linux Machine with Microsoft Azure
+- Task: Finish OTTD Chapter 9 using a Azure VM (ubuntu) 
+- Goals: get to know Azure portal, setup and configure a linux vm, deploy django app manually, networking
+- Subtasks
+    - create a virtual machine and login in https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys --> choose cheapest!!!
     - install python and replace alias https://askubuntu.com/questions/320996/how-to-make-python-program-command-execute-python-3
-- Learning Concepts:
-    - Azure VM: setup, networking
-    - linux commands
+
 
 ### Part 2.2 Automated Deployment on VM
-- First task: Create pipeline for unittest
-    - Connect git and azure devops
-    - Use standard django template
-    - Modify a bit
-    - Create a stage "unittest"
+Deploy Django app via CICD Pipeline
+- Task: Finish DevOps Tutorial
+    - Task Phillip P. to find a short tutorial for pipeline (not self-created)
+    - Goal: Implement a first pipeline on your own
+- Task: Run django unittest in the pipeline automatically
+    - Goal: understand pipeline concepts
+    - Subtasks: 
         - Understand difference stages, task, steps, jobs: https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops
         - Implement stage: https://docs.microsoft.com/en-us/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml
-    - Deploy code on VM
+
+- Task: Deploy code on VM
+    - Goal: understand difference between build and deployment stage
+    - Sources
         - https://youtu.be/zBr7cl6ASMQ
         - https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/deploy-linux-vm?view=azure-devops&tabs=java
-            - erstmal mit git clone
-            - dann mit copy und upload
-    - create VM with terraform
-        - Question: where to store terraform state
 
-### Part 2.3 Automated deployment on Azure App
-    - Adjust database
+- Task: Create VM via Terraform and include in pipeline
+- Goals: get to know IaC, include in pipeline
+- Subtasks
+    - handel terraform state correctly
 
-- Understand pipeline
-- Understand git concepts: feature branch, PR
-- Understand how to database tests
 
+### Part 2.3 Automated deployment on Azure Apps
+
+- Task: use a azure service to replace sqlite by azure sql db or postgres
+- Task: create a azure web app and deploy the django app
+- Task: deploy django as web app via devops pipeline
+- Task: compare differences between VM and Azure Apps
 
 ## Ideas for further parts: 
 - Dependency management with poetry
