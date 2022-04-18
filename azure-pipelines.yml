@@ -80,4 +80,9 @@ stages:
               script: |
                 # Modify deployment script based on the app type
                 echo "Starting deployment script run"
-                mkdir pipline-test
+                cd ~
+                pwd
+                mkdir pipline-test-folder
+                cd pipline-test-folder
+                pwd
+                echo ---- Done----
