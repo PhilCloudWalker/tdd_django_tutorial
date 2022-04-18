@@ -87,10 +87,14 @@ stages:
                 mkdir django_code
                 cp '$(Pipeline.Workspace)/superlists' django_code -r
                 cd django_code/superlists
+                echo Install packages
                 python -m venv virtualenv
                 source virtualenv/bin/activate
                 pip install -r requirements.txt
-                python manage.py migrate
-                screen -d -m python manage.py runserver 0.0.0.0:8000
+                echo Migrate Database
                 pwd
+                python manage.py migrate
+                echo Run Django app
+                pwd
+                screen -d -m python manage.py runserver 0.0.0.0:8000
                 echo ---- Done----
