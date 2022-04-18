@@ -82,7 +82,7 @@ stages:
                 echo "Starting deployment script run"
                 cd ~
                 pwd
-                echo Delete old folder (very crude)
+                echo Delete old folder
                 rm superlists -r -f
                 mkdir superlists
                 cp '$(Pipeline.Workspace)/drop' superlists
