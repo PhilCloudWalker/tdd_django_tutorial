@@ -60,8 +60,9 @@ Deploy Django app via CICD Pipeline
 
 - Task: Deploy code on VM
     - Goal: understand difference between build and deployment stage
-    - Deploy the current django app on teh created linux vm https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/deploy-linux-vm?view=azure-devops&tabs=java
-    - Understand why the current setup is not optimal --> swith to nginx and gunicorn (Chapter 10 of OTTG) 
+    - Subtaks
+        - Deploy the current django app on teh created linux vm https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/deploy-linux-vm?view=azure-devops&tabs=java
+        - Understand why the current setup is not optimal --> swith to nginx and gunicorn (Chapter 10 of OTTG) 
 
 - Task: Create VM via Terraform and include in pipeline
     - Goals: get to know IaC, include in pipeline
