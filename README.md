@@ -8,7 +8,7 @@
 - Obey the Testing Goat (OTTD): https://www.obeythetestinggoat.com/pages/book.html#toc
 
 ## Part 0: Getting Started
-Get to now django and write the first test
+Get to now django and write first tests
 - Task: Create Git Repo in Thinkport GitHub Account
 - Task: Finish Django Tutorial
     - Link: https://tutorial.djangogirls.org/en/
