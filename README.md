@@ -15,7 +15,7 @@ Get to now django and write the first test
     - Goals: First understanding of django, VSCode Setup, understanding of virtual envs
     - Subtasks: 
         - Install VSCode
-        - Check which python do you have --> what is the command?
+        - Check which python version do you have --> what is the command?
         - Setup Virtual Env using venv package https://docs.python.org/3/library/venv.html
 
 - Task: Finish OTTD Chapter 1 and 2
