@@ -25,17 +25,17 @@ Get to now django and write the first test
 
 ## Part 1: TDD with Django
 Develop a django app using test driven development locally
-- Task: Finish OTTD Chapter 3 till 8
 - Goals: understand testing, familiarize with git, learn console commands, learn more about ORM, get to know rest concepts 
-- Subtasks
-    - TDD - > unittest vs functional test
-        - unittest structure: Setup, Exercise, Assert
-    - how to create backend --> understanding of ORM
-    - Rest API:
-        - when does a API follows the rest principles?
-        - understand conventions like: no trailing slash --> “action” URLs which modify the database.
-    - Git:
-        - get familiar with git status, git commit, git diff
+- Task: Finish OTTD Chapter 3 till 8
+    - Subtasks
+        - TDD - > unittest vs functional test
+            - unittest structure: Setup, Exercise, Assert
+        - how to create backend --> understanding of ORM
+        - Rest API:
+            - when does a API follows the rest principles?
+            - understand conventions like: no trailing slash --> “action” URLs which modify the database.
+        - Git:
+            - get familiar with git status, git commit, git diff
 
 ## Part 2: Deploy with Azure DevOps
 ### Part 2.1: Manual deployment on a VM
