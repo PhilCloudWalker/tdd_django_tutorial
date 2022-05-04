@@ -8,8 +8,10 @@
 - Obey the Testing Goat (OTTD): https://www.obeythetestinggoat.com/pages/book.html#toc
 
 ## Part 0: Getting Started
-Get to now django and write first tests
-- Task: Create Git Repo in Thinkport GitHub Account
+
+Get to now Django and write first tests.
+
+- Task: Create a Git repository for the project in your personal GitHub account
 - Task: Finish Django Tutorial
     - Link: https://tutorial.djangogirls.org/en/
     - Goals: First understanding of django, VSCode Setup, understanding of virtual envs
@@ -17,7 +19,6 @@ Get to now django and write first tests
         - Install VSCode
         - Check which python version do you have --> what is the command?
         - Setup Virtual Env using venv package https://docs.python.org/3/library/venv.html
-
 - Task: Finish OTTD Chapter 1 and 2
     - Goals: Writing first unittest and get to know test driven development
     - Subtask
