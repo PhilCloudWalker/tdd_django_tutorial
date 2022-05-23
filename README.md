@@ -50,13 +50,14 @@ Deploy Django app on a Linux Machine with Microsoft Azure
 ### Part 2.2 Automated Deployment on VM
 Deploy Django app via CICD Pipeline
 - Task: Finish DevOps Tutorial
-    - Task Phillip P. to find a short tutorial for pipeline (not self-created)
+    - Create a first python pipeline: https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python?view=azure-devops
     - Goal: Implement a first pipeline on your own
 - Task: Run django unittest in the pipeline automatically
     - Goal: understand pipeline concepts
     - Subtasks: 
         - Understand difference stages, task, steps, jobs: https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops
         - Implement stage: https://docs.microsoft.com/en-us/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml
+        - Docu for some pipeline tips: https://medium.com/@anthonypjshaw/azure-pipelines-with-python-by-example-aa65f4070634
 
 - Task: Deploy code on VM
     - Goal: understand difference between build and deployment stage
